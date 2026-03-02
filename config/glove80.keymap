@@ -25,8 +25,8 @@ ZMK_LAYER(                                                                      
         &kp CAPS             LM                                            RM           &kp RSHFT     \
         &kp LSHFT            LB NAV_LEFT  NAV_RIGHT  NAV_UP  &none  NAV_DEL  NAV_BSPC    RB           &kp RBKT     \
                                 &none  &none &none                                                \
-        &magic 0 0 &none LH NAV_DOWN                                      &none  RH    &kp LBKT &kp BSLH  \
-                                                     &none &kp PG_UP &none)
+        &magic 0 0 &none LH NAV_DOWN                                      &none  RH    &kp PG_UP &none  \
+                                                     &none &kp LBKT &kp BSLH)
 
 #include "zmk-helpers/key-labels/glove80.h"
 #include "base.keymap"
