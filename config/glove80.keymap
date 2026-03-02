@@ -1,4 +1,21 @@
 #define CONFIG_WIRELESS
+
+/ {
+    behaviors {
+        magic: magic_behavior {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MAGIC_HOLD_TAP";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&rgb_config>;
+        };
+    };
+};
+
+// 2. Define the alias so the macro understands "MAGIC"
+#define MAGIC &magic MAGIC 0
+
 #define ZMK_BASE_LAYER(name, LT, RT, LM, RM, LB, RB, LH, RH)                                      \
 ZMK_LAYER(                                                                                    \
         name,                                                                                     \
