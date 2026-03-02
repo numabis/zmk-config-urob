@@ -8,7 +8,7 @@ ZMK_LAYER(                                                                      
         &kp CAPS             LM                                            RM           &none     \
         &kp LSHFT            LB &none  &none  &none  &none  &none &none    RB           &none     \
                                 &none  &none &none                                                \
-        &kp MAGIC &none LH &none                                      &none  RH    &none &none  \
+        &magic 0 0 &none LH &none                                      &none  RH    &none &none  \
                                                      &none &none &none)
 
 #include "zmk-helpers/key-labels/glove80.h"
